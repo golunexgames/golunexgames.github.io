@@ -4,12 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Golunex Games</title>
+<meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Golunex Games is an independent studio making thoughtful puzzle games for phones. Our first game is Twicetold, a time-loop puzzle where your past self helps you escape.">
 <meta property="og:title" content="Golunex Games">
 <meta property="og:description" content="Independent puzzle games for phones. First up: Twicetold, a time-loop puzzle.">
 <meta property="og:image" content="https://golunexgames.github.io/assets/og.png">
 <meta property="og:url" content="https://golunexgames.github.io/">
-<meta name="theme-color" content="#140A30">
+<meta name="theme-color" content="#120A2C">
 <meta name="google-site-verification" content="zMfiG2zyhTrqMtw1kCAh60I9pgtPP8tXTLVw0UX_7F8">
 <link rel="icon" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -21,23 +22,35 @@
 <body>
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="/" aria-label="Golunex Games home"><img src="/assets/logo.png" alt="Golunex Games" width="200" height="56"></a>
+    <a class="brand" href="/" aria-label="Golunex Games home">
+      <img class="full" src="/assets/logo.png" alt="Golunex Games" width="143" height="40">
+      <img class="compact" src="/assets/mark.png" alt="Golunex Games" width="40" height="40">
+    </a>
     <nav class="nav" aria-label="Main">
-      <a href="#games">Games</a>
-      <a href="#studio">Studio</a>
-      <a href="#contact">Contact</a>
+      <a href="/#games">Games</a>
+      <a href="/#studio">Studio</a>
+      <a href="/#contact">Contact</a>
     </nav>
   </div>
 </header>
 
 <main>
-  <section class="hero">
-    <img class="moon" src="/assets/mark.png" alt="" aria-hidden="true">
+  <section class="hero glow">
     <div class="wrap">
-      <span class="eyebrow">Independent game studio</span>
-      <h1>Small puzzle worlds,<br>made with patience.</h1>
-      <p class="lead">Golunex Games makes calm, clever puzzle games for phones. Fair hints, no pay-to-win, no walls of ads: just ideas that click when you find them.</p>
-      <a class="btn" href="#games">See our games</a>
+      <div class="copy">
+        <span class="eyebrow">Independent game studio</span>
+        <h1>Small puzzle worlds, <span class="grad">made with patience.</span></h1>
+        <p class="lead">Golunex Games makes calm, clever puzzle games for phones. Fair hints, no pay-to-win, no walls of ads: just ideas that click when you find them.</p>
+        <div class="actions">
+          <a class="btn" href="/twicetold/">Meet Twicetold</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="art" aria-hidden="true">
+        <img class="moon" src="/assets/mark.png" alt="">
+        <div class="phone back"><img src="/assets/shot-levels.jpg" alt=""></div>
+        <div class="phone"><img src="/assets/shot-echo.jpg" alt=""></div>
+      </div>
     </div>
   </section>
 
@@ -45,36 +58,71 @@
     <div class="wrap">
       <div class="section-head">
         <span class="eyebrow">Our games</span>
-        <h2>One game in the workshop</h2>
+        <h2>Now in the workshop</h2>
       </div>
-
-      <article class="game">
-        <img class="icon" src="/assets/twicetold-icon.png" alt="Twicetold icon" width="112" height="112">
-        <div class="body">
-          <h3>Twicetold</h3>
-          <span class="sub">Solve it together with your past</span>
-          <p>A time-loop puzzle. Every loop rewinds time and leaves an echo that repeats your earlier moves. Send one self to hold a plate, walk through the door it opens, and never step where an echo has to go. 90 levels across eight chapters, plus a new puzzle every day.</p>
-          <span class="status">Coming soon to Google Play</span>
-          <div class="links">
-            <a href="/twicetold/">About the game</a>
-            <a href="/twicetold/privacy/">Privacy Policy</a>
-            <a href="/twicetold/privacy/#tr">Gizlilik Politikası</a>
-            <a href="/twicetold/delete-data/">Delete your data</a>
+      <article class="feature">
+        <div class="feature-in">
+          <div class="info">
+            <div class="head">
+              <img class="icon" src="/assets/twicetold-icon.png" alt="Twicetold icon" width="84" height="84">
+              <div>
+                <h3>Twicetold</h3>
+                <span class="sub">Solve it together with your past</span>
+              </div>
+            </div>
+            <p class="desc">A time-loop puzzle. Every loop rewinds time and leaves an echo that repeats your earlier moves. Send one self to hold a plate, walk through the door it opens, and never step where an echo has to go.</p>
+            <div class="chips"><span class="chip">90 levels</span><span class="chip">8 chapters</span><span class="chip">Daily puzzle</span><span class="chip">9 languages</span></div>
+            <span class="badge">Coming soon to Google Play</span>
+            <div class="actions">
+              <a class="btn" href="/twicetold/">About the game</a>
+              <a class="btn ghost" href="/twicetold/privacy/">Privacy</a>
+            </div>
+          </div>
+          <div class="shots" aria-label="Twicetold screenshots">
+            <div class="phone"><img src="/assets/shot-menu.jpg" alt="Title screen" loading="lazy"></div>
+            <div class="phone"><img src="/assets/shot-echo.jpg" alt="A level with the player and an echo" loading="lazy"></div>
+            <div class="phone"><img src="/assets/shot-win.jpg" alt="Win card with three stars" loading="lazy"></div>
           </div>
         </div>
       </article>
     </div>
   </section>
 
-  <section id="studio">
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">How we make games</span>
+        <h2>Puzzles that respect your time</h2>
+      </div>
+      <div class="tiles">
+        <div class="tile">
+          <div class="ic violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.8.8 1 1.5 1 2.5h6c0-1 .2-1.7 1-2.5A6 6 0 0 0 12 3z"/></svg></div>
+          <h3>Fair hints</h3>
+          <p>Stuck? A strategy tip or the full way, always your choice. A hint never locks you out of the fun.</p>
+        </div>
+        <div class="tile">
+          <div class="ic magenta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h3>Every puzzle checked</h3>
+          <p>A solver plays every level before it ships, so each one has a real solution and no cheap shortcut.</p>
+        </div>
+        <div class="tile">
+          <div class="ic orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg></div>
+          <h3>Made for everyone</h3>
+          <p>Nine languages from day one, offline play, and only the data a feature truly needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="studio" class="band">
     <div class="wrap about">
-      <div>
+      <div class="copy">
         <div class="section-head">
           <span class="eyebrow">The studio</span>
           <h2>A one-person studio from Türkiye</h2>
         </div>
-        <p>Golunex Games is a small independent studio. Every game is designed, built and tested by hand, and each level is checked by a solver before it ships, so every puzzle has a real solution and no cheap shortcut.</p>
-        <p>Our games are made for everyone, everywhere: they launch in nine languages, work offline, and keep the data they collect to the minimum a feature needs.</p>
+        <p>Golunex Games is a small independent studio. Every game is designed, built and tested by hand, with care for the details players feel: how a move sounds, how a level teaches, how a hint helps.</p>
+        <p>The crescent G in our logo is a moon over a quiet night of play, with a controller tucked inside.</p>
       </div>
       <dl class="facts">
         <div><dt>Based in</dt><dd>Türkiye</dd></div>
@@ -85,18 +133,21 @@
     </div>
   </section>
 
-  <section id="contact" class="band">
-    <div class="wrap section-head">
-      <span class="eyebrow">Contact</span>
-      <h2>Questions, bugs or ideas?</h2>
-      <p style="color: var(--muted); max-width: 46em;">Write to us at <a href="mailto:golunexgames@gmail.com">golunexgames@gmail.com</a>. We answer every message, usually within two working days. For a bug, tell us your phone model and which level you were playing.</p>
+  <section id="contact">
+    <div class="wrap">
+      <div class="cta">
+        <span class="eyebrow">Contact</span>
+        <h2>Questions, bugs or ideas?</h2>
+        <p>We answer every message, usually within two working days. For a bug, tell us your phone model and the level you were playing.</p>
+        <div class="actions"><a class="btn" href="mailto:golunexgames@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3 7l9 6 9-6"/></svg>golunexgames@gmail.com</a></div>
+      </div>
     </div>
   </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Golunex Games</span>
+    <div class="who"><img src="/assets/mark.png" alt="" width="36" height="36"><span>© 2026 Golunex Games</span></div>
     <nav aria-label="Footer">
       <a href="/twicetold/">Twicetold</a>
       <a href="/twicetold/privacy/">Privacy</a>

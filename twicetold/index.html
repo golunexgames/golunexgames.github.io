@@ -8,7 +8,7 @@
 <meta property="og:title" content="Twicetold — a time-loop puzzle">
 <meta property="og:description" content="Every loop leaves an echo that repeats your moves. Solve it together with your past.">
 <meta property="og:image" content="https://golunexgames.github.io/assets/twicetold-feature.jpg">
-<meta name="theme-color" content="#140A30">
+<meta name="theme-color" content="#102048">
 <link rel="icon" href="/favicon.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,10 @@
 <body>
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="/" aria-label="Golunex Games home"><img src="/assets/logo.png" alt="Golunex Games" width="200" height="56"></a>
+    <a class="brand" href="/" aria-label="Golunex Games home">
+      <img class="full" src="/assets/logo.png" alt="Golunex Games" width="143" height="40">
+      <img class="compact" src="/assets/mark.png" alt="Golunex Games" width="40" height="40">
+    </a>
     <nav class="nav" aria-label="Main">
       <a href="/#games" aria-current="page">Games</a>
       <a href="/#studio">Studio</a>
@@ -29,23 +32,32 @@
 </header>
 
 <main>
-  <section class="hero">
+  <section class="hero tw-hero glow">
     <div class="wrap">
-      <img src="/assets/twicetold-icon.png" alt="" width="96" height="96" style="border-radius: 22px; box-shadow: 0 10px 30px rgba(0,0,0,.35);">
-      <span class="eyebrow">A time-loop puzzle</span>
-      <h1>Twicetold</h1>
-      <p class="lead">When a loop ends, time rewinds and your earlier moves play again as an echo. Send one self to hold a plate, walk through the door it opens, and never step where an echo needs to be: a single collision is a paradox.</p>
-      <span class="status">Coming soon to Google Play</span>
+      <div class="copy">
+        <img class="app-icon" src="/assets/twicetold-icon.png" alt="" width="104" height="104">
+        <span class="eyebrow">A time-loop puzzle</span>
+        <h1>Twicetold: solve it <span class="amber">together with your past.</span></h1>
+        <p class="lead">When a loop ends, time rewinds and your earlier moves play again as an echo. Send one self to hold a plate, walk through the door it opens, and never step where an echo needs to be: one collision is a paradox.</p>
+        <span class="badge">Coming soon to Google Play</span>
+      </div>
+      <div class="art" aria-hidden="true">
+        <div class="phone back"><img src="/assets/shot-menu.jpg" alt=""></div>
+        <div class="phone"><img src="/assets/shot-echo.jpg" alt=""></div>
+      </div>
     </div>
   </section>
 
-  <section class="band" aria-label="Screenshots">
+  <section class="band">
     <div class="wrap">
-      <div class="shots">
-        <img src="/assets/shot-menu.jpg" alt="Twicetold title screen with Play, Levels and Daily Puzzle buttons" width="720" height="1280" loading="lazy">
-        <img src="/assets/shot-echo.jpg" alt="A level in progress: the player, a pale echo, coloured plates and doors" width="720" height="1280" loading="lazy">
-        <img src="/assets/shot-levels.jpg" alt="Level select with chapters, stars and locked levels" width="720" height="1280" loading="lazy">
-        <img src="/assets/shot-win.jpg" alt="Win card with three stars and 350 points" width="720" height="1280" loading="lazy">
+      <div class="section-head">
+        <span class="eyebrow">How to play</span>
+        <h2>Three gestures, endless loops</h2>
+      </div>
+      <div class="steps">
+        <div class="step"><strong>Swipe to move</strong><span>Every move is one step. Reach the exit before the loop runs out of steps.</span></div>
+        <div class="step"><strong>Tap to wait</strong><span>Waiting is a move too: let a door open, or let your echo pass first.</span></div>
+        <div class="step"><strong>Hold to rewind</strong><span>End the loop. Time goes back, and your past self replays every move you made.</span></div>
       </div>
     </div>
   </section>
@@ -53,33 +65,52 @@
   <section>
     <div class="wrap">
       <div class="section-head">
-        <span class="eyebrow">What's inside</span>
-        <h2>Simple rules, deep puzzles</h2>
+        <span class="eyebrow">Screenshots</span>
+        <h2>A quiet, glowing world</h2>
       </div>
-      <div class="features">
-        <div><strong>90 levels, 8 chapters</strong><span>Echoes, cracked floors, reverse doors, boxes, one-way squares, then all of them at once.</span></div>
-        <div><strong>Against the Clock</strong><span>One chapter puts a clock on lighter puzzles for players who like to think fast.</span></div>
-        <div><strong>A puzzle every day</strong><span>The same daily puzzle for everyone, with a streak and a fair leaderboard checked on our server.</span></div>
-        <div><strong>Hints that respect you</strong><span>A strategy tip or the full way, never forced. Using one simply caps that level's score.</span></div>
-        <div><strong>Every level is solvable</strong><span>A solver checks each puzzle: it has a solution and needs exactly the loops it says.</span></div>
-        <div><strong>Nine languages</strong><span>English, Türkçe, Español, Português, Deutsch, Français, Italiano, Русский and Bahasa Indonesia.</span></div>
+      <div class="shots" aria-label="Screenshots">
+        <div class="phone"><img src="/assets/shot-menu.jpg" alt="Title screen with Play, Levels and Daily Puzzle" loading="lazy"></div>
+        <div class="phone"><img src="/assets/shot-echo.jpg" alt="A level in progress with the player, an echo, plates and doors" loading="lazy"></div>
+        <div class="phone"><img src="/assets/shot-levels.jpg" alt="Level select with chapters and stars" loading="lazy"></div>
+        <div class="phone"><img src="/assets/shot-win.jpg" alt="Win card with three stars and 350 points" loading="lazy"></div>
       </div>
     </div>
   </section>
 
   <section class="band">
-    <div class="wrap section-head">
-      <span class="eyebrow">Support</span>
-      <h2>Need help?</h2>
-      <p style="color: var(--muted); max-width: 46em;">Email <a href="mailto:golunexgames@gmail.com">golunexgames@gmail.com</a> with your phone model and the level number. Read how we handle data in the <a href="/twicetold/privacy/">Privacy Policy</a> (<a href="/twicetold/privacy/#tr">Türkçe</a>), or <a href="/twicetold/delete-data/">ask us to delete your data</a>.</p>
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">What's inside</span>
+        <h2>Simple rules, deep puzzles</h2>
+      </div>
+      <div class="tiles">
+        <div class="tile"><div class="ic amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg></div><h3>90 levels, 8 chapters</h3><p>Echoes, cracked floors, reverse doors, boxes and one-way squares, then all of them at once.</p></div>
+        <div class="tile"><div class="ic blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2.5M9 2h6"/></svg></div><h3>Against the Clock</h3><p>One chapter puts a clock on lighter puzzles for players who like to think fast.</p></div>
+        <div class="tile"><div class="ic violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div><h3>A puzzle every day</h3><p>The same daily puzzle for everyone, a streak to keep, and a fair leaderboard checked on our server.</p></div>
+        <div class="tile"><div class="ic magenta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.8.8 1 1.5 1 2.5h6c0-1 .2-1.7 1-2.5A6 6 0 0 0 12 3z"/></svg></div><h3>Hints that respect you</h3><p>A strategy tip or the full way, never forced. A hint simply caps that level's score.</p></div>
+        <div class="tile"><div class="ic orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div><h3>Every level solvable</h3><p>A solver checks each puzzle: it has a solution and needs exactly the loops it says.</p></div>
+        <div class="tile"><div class="ic blue"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg></div><h3>Nine languages</h3><p>English, Türkçe, Español, Português, Deutsch, Français, Italiano, Русский and Bahasa Indonesia.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="cta">
+        <span class="eyebrow">Support</span>
+        <h2>Need help?</h2>
+        <p>Email us with your phone model and the level number. Read how we handle data in the <a href="/twicetold/privacy/">Privacy Policy</a> (<a href="/twicetold/privacy/#tr">Türkçe</a>), or <a href="/twicetold/delete-data/">delete your data</a>.</p>
+        <div class="actions"><a class="btn" href="mailto:golunexgames@gmail.com">golunexgames@gmail.com</a></div>
+      </div>
     </div>
   </section>
 </main>
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Golunex Games</span>
+    <div class="who"><img src="/assets/mark.png" alt="" width="36" height="36"><span>© 2026 Golunex Games</span></div>
     <nav aria-label="Footer">
+      <a href="/twicetold/">Twicetold</a>
       <a href="/twicetold/privacy/">Privacy</a>
       <a href="/twicetold/delete-data/">Delete your data</a>
       <a href="mailto:golunexgames@gmail.com">golunexgames@gmail.com</a>
