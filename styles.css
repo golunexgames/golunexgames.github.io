@@ -1,14 +1,14 @@
 /* Golunex Games — one night-sky look for the studio and its games.
    Layout: a single centred column (max 1040px) with full-width bands; cards only for games. */
 :root {
-  --night: #151A3D;      /* brand background */
-  --night-deep: #0E1230; /* bands and footer */
-  --panel: #1D2350;      /* game cards, legal boxes */
-  --line: #2A3166;
-  --gold: #F2C14E;       /* brand accent: the crescent */
+  --night: #140A30;      /* brand background: the logo's violet night */
+  --night-deep: #0D0623; /* bands and footer */
+  --panel: #22134A;      /* game cards, legal boxes */
+  --line: #362062;
+  --gold: #FFB13B;       /* brand accent: the warm edge of the crescent and the X */
   --gold-dark: #C9952B;
   --text: #EEF0FA;
-  --muted: #A3ABD1;
+  --muted: #B7A9DD;
   --display: "Nunito", "Avenir Next", "Segoe UI", system-ui, sans-serif;
   --body: "Nunito", "Avenir Next", "Segoe UI", system-ui, sans-serif;
   color-scheme: dark;
@@ -39,7 +39,8 @@ p { margin: 0; }
 /* header */
 .top { padding-block: 22px; }
 .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
-.brand img { height: 44px; width: auto; }
+.brand img { height: 56px; width: auto; }
+.brand { display: inline-flex; }
 .nav { display: flex; gap: 22px; flex-wrap: wrap; font-weight: 700; }
 .nav a { color: var(--muted); text-decoration: none; }
 .nav a:hover, .nav a[aria-current] { color: var(--text); }
@@ -49,7 +50,7 @@ p { margin: 0; }
 .hero .wrap { display: grid; gap: 22px; max-width: 1040px; }
 .hero p.lead { font-size: 1.2rem; color: var(--muted); max-width: 34em; }
 .moon {
-  position: absolute; right: -60px; top: -40px; width: 340px; opacity: 0.12; pointer-events: none;
+  position: absolute; right: -60px; top: -40px; width: 340px; opacity: 0.16; pointer-events: none;
 }
 @media (max-width: 700px) { .moon { width: 220px; right: -70px; top: -10px; } }
 
@@ -79,10 +80,10 @@ section { padding-block: 64px; }
 
 .btn {
   display: inline-flex; align-items: center; gap: 10px; width: fit-content;
-  background: var(--gold); color: var(--night); text-decoration: none; font-weight: 900;
+  background: var(--gold); color: #1A0B33; text-decoration: none; font-weight: 900;
   padding: 12px 22px; border-radius: 999px;
 }
-.btn:hover { background: #FFD77A; color: var(--night); }
+.btn:hover { background: #FFD77A; color: #1A0B33; }
 .btn.ghost { background: transparent; color: var(--text); border: 1.5px solid var(--line); }
 .btn.ghost:hover { border-color: var(--gold); color: var(--text); }
 
