@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1D3B6E"/><stop offset="1" stop-color="#0C1C38"/></linearGradient>
+    <radialGradient id="glow"><stop offset="0" stop-color="#FFB347" stop-opacity=".55"/><stop offset="1" stop-color="#FFB347" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="120" height="120" rx="27" fill="url(#bg)"/>
+  <g fill="#2C5291">
+    <rect x="17" y="17" width="24" height="24" rx="6"/><rect x="48" y="17" width="24" height="24" rx="6"/><rect x="79" y="17" width="24" height="24" rx="6"/>
+    <rect x="17" y="48" width="24" height="24" rx="6"/><rect x="79" y="48" width="24" height="24" rx="6"/>
+    <rect x="17" y="79" width="24" height="24" rx="6"/><rect x="48" y="79" width="24" height="24" rx="6"/><rect x="79" y="79" width="24" height="24" rx="6"/>
+  </g>
+  <rect x="48" y="48" width="24" height="24" rx="6" fill="#6FE3C1" opacity=".9"/>
+  <circle cx="29" cy="29" r="8" fill="#BCD3F3" opacity=".55"/>
+  <circle cx="60" cy="29" r="8" fill="#BCD3F3" opacity=".8"/>
+  <circle cx="91" cy="60" r="26" fill="url(#glow)"/>
+  <circle cx="91" cy="60" r="9" fill="#FFB347"/>
+</svg>

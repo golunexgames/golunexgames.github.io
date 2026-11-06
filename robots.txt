@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://golunexgames.github.io/sitemap.xml
