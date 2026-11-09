@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wisewhere · Friend Room</title>
+<meta name="description" content="You're invited to a Wisewhere Friend Room. Open the app to play the same questions.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#FF6B4A">
+<link rel="icon" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap">
+<style>
+  :root { --bg1: #FFF3DF; --bg2: #FDD9B5; --ink: #2A2238; --muted: #7A6E80; --coral: #FF6B4A; --card: #FFFFFF; }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; font-family: Nunito, system-ui, sans-serif; color: var(--ink);
+         background: linear-gradient(180deg, var(--bg1), var(--bg2)); display: flex; align-items: center; justify-content: center;
+         padding: 24px 16px; }
+  .card { width: 100%; max-width: 420px; background: var(--card); border-radius: 28px; padding: 32px 24px;
+          box-shadow: 0 12px 40px rgba(42, 34, 56, .12); text-align: center; }
+  .globe { width: 72px; height: 72px; border-radius: 50%; background: var(--coral); margin: 0 auto 16px; display: grid; place-items: center; }
+  h1 { font-size: 26px; font-weight: 900; margin: 0 0 8px; }
+  p { color: var(--muted); font-weight: 700; margin: 0 0 20px; line-height: 1.4; }
+  .code { font-size: 30px; font-weight: 900; color: var(--coral); letter-spacing: .5px; margin: 8px 0 24px; word-break: break-all; }
+  .btn { display: block; width: 100%; padding: 16px; border-radius: 999px; font: inherit; font-size: 20px; font-weight: 900;
+         text-decoration: none; border: 0; cursor: pointer; margin-bottom: 12px; }
+  .primary { background: var(--coral); color: #fff; }
+  .ghost { background: #F6E7D6; color: var(--ink); font-size: 16px; }
+  .small { font-size: 14px; color: var(--muted); margin-top: 8px; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="globe" aria-hidden="true">
+    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="#fff" stroke-width="3.2">
+      <circle cx="20" cy="20" r="15"/><ellipse cx="20" cy="20" rx="7" ry="15"/><path d="M5 20h30M20 5v30"/>
+    </svg>
+  </div>
+  <h1 id="title">You're invited!</h1>
+  <p id="lead">Open Wisewhere to join your friend's room and play the same questions.</p>
+  <div class="code" id="code"></div>
+  <a class="btn primary" id="open" href="#">Open in Wisewhere</a>
+  <a class="btn ghost" id="play" href="https://play.google.com/store/apps/details?id=com.golunex.wisewhere">Get it on Google Play</a>
+  <div class="small" id="ios" hidden>App Store version coming soon.</div>
+  <div class="small" id="manual">No app? Install it, then enter the code under Friend Room → Join.</div>
+  <div class="small" id="bad" hidden>This link has no room code.</div>
+</main>
+<script>
+(function () {
+  var tr = (navigator.language || "").toLowerCase().indexOf("tr") === 0;
+  var T = tr ? {
+    title: "Davet edildin!", lead: "Arkadaşının odasına katılmak ve aynı soruları oynamak için Wisewhere'i aç.",
+    open: "Wisewhere'de aç", play: "Google Play'den indir", ios: "App Store sürümü yakında.",
+    manual: "Uygulama yok mu? İndir, sonra Arkadaş Odası → Kodla katıl bölümüne kodu yaz.", bad: "Bu bağlantıda oda kodu yok."
+  } : null;
+  if (T) {
+    document.documentElement.lang = "tr";
+    for (var k in T) { var el = document.getElementById(k); if (el) el.textContent = T[k]; }
+  }
+  var m = (location.hash + location.search).toUpperCase().match(/WISE-[A-Z0-9]{6}/);
+  var openBtn = document.getElementById("open");
+  if (!m) { openBtn.hidden = true; document.getElementById("bad").hidden = false; return; }
+  var code = m[0];
+  document.getElementById("code").textContent = code;
+  var ua = navigator.userAgent || "";
+  var android = /Android/i.test(ua), ios = /iPhone|iPad|iPod/i.test(ua);
+  var play = document.getElementById("play").href;
+  var url = android
+    ? "intent://room/" + code + "#Intent;scheme=wisewhere;package=com.golunex.wisewhere;S.browser_fallback_url=" + encodeURIComponent(play) + ";end"
+    : "wisewhere://room/" + code;
+  openBtn.href = url;
+  if (ios) document.getElementById("ios").hidden = false;
+  if (android || ios) setTimeout(function () { location.href = url; }, 300); // try the app straight away
+})();
+</script>
+</body>
+</html>
