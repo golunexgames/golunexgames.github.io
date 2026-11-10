@@ -208,3 +208,59 @@ footer .who img { width: 36px; height: 36px; }
 footer nav { display: flex; flex-wrap: wrap; gap: 6px 18px; }
 footer a { color: var(--muted); }
 footer a:hover { color: var(--text); }
+
+/* ------------------------------------------------------------ 2026-11 redesign: two games on the home page */
+.section-head p { max-width: 52ch; }
+.home-hero .copy { gap: 20px; }
+.hero-games { list-style: none; margin: 6px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+.hero-games a {
+  display: flex; align-items: center; gap: 12px; padding: 8px 16px 8px 8px; border-radius: 999px; text-decoration: none; color: var(--text);
+  background: rgba(255, 255, 255, 0.06); box-shadow: inset 0 0 0 1px var(--line); transition: background .15s, transform .15s;
+}
+.hero-games a:hover { background: rgba(255, 255, 255, 0.11); transform: translateY(-2px); }
+.hero-games img { width: 44px; height: 44px; border-radius: 12px; }
+.hero-games span { display: grid; line-height: 1.2; }
+.hero-games strong { font-weight: 900; }
+.hero-games small { color: var(--muted); font-weight: 700; font-size: 0.8rem; }
+/* two phones side by side: Twicetold's night and Wiserio's day */
+.art.duo { min-height: 440px; gap: 12px; max-width: 100%; }
+.art.duo .phone { width: min(230px, 38vw); position: relative; }
+.art.duo .phone.tw { transform: rotate(-7deg) translateY(28px); z-index: 1; }
+.art.duo .phone.ws { transform: rotate(6deg) translate(-26px, -18px); z-index: 2; }
+.art.duo .moon { opacity: .5; }
+@media (max-width: 520px) { .art.duo { min-height: 330px; gap: 8px; } .art.duo .phone { width: 38vw; } .art.duo .phone.ws { transform: rotate(6deg) translate(-10px, -14px); } }
+
+/* feature cards: each game in its own colours */
+.feature + .feature { margin-top: 28px; }
+.feature.day { background: linear-gradient(120deg, #FF6B4A, #FFB83D); box-shadow: 0 30px 80px rgba(255, 107, 74, .22); }
+.feature.day .feature-in { background: linear-gradient(170deg, #FFF4E4 0%, #FFE2C4 55%, #FFC89A 100%); color: #2A2238; }
+.feature.day h3 { color: #2A2238; }
+.feature.day .sub { color: #E8502F; }
+.feature.day p.desc { color: #4A3D55; }
+.feature.day .chip { background: rgba(42, 34, 56, .08); color: #2A2238; box-shadow: inset 0 0 0 1px rgba(42, 34, 56, .14); }
+.feature.day .badge { color: #B23A1C; background: rgba(232, 80, 47, .1); box-shadow: inset 0 0 0 1px rgba(232, 80, 47, .35); }
+.feature.day .badge::before { background: #E8502F; box-shadow: 0 0 0 4px rgba(232, 80, 47, .18); }
+.feature.day .btn { background: #FF6B4A; color: #fff; box-shadow: 0 10px 26px rgba(255, 107, 74, .35); }
+.feature.day .btn:hover { color: #fff; background: #F25C3B; }
+.feature.day .btn.ghost { background: rgba(42, 34, 56, .07); color: #2A2238; box-shadow: inset 0 0 0 1.5px rgba(42, 34, 56, .18); }
+.feature.day .btn.ghost:hover { color: #2A2238; box-shadow: inset 0 0 0 1.5px rgba(42, 34, 56, .4); }
+.feature.day .phone { background: linear-gradient(160deg, #5A2A28, #2A2238); box-shadow: 0 24px 50px rgba(90, 42, 40, .35), inset 0 0 0 1.5px rgba(255, 255, 255, .25); }
+.feature.day .shots::-webkit-scrollbar-thumb { background: rgba(42, 34, 56, .2); }
+
+/* four promises */
+@media (min-width: 700px) { .tiles.four { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1000px) { .tiles.four { grid-template-columns: repeat(4, 1fr); } }
+footer .sep { color: var(--line); }
+
+/* Wiserio page: the game's own paper and coral */
+.ws-hero { background: linear-gradient(180deg, #2A1D36 0%, var(--bg) 100%); }
+.ws-hero.glow::before { background: radial-gradient(circle, #FF6B4A, transparent 70%); opacity: .55; }
+.ws-hero.glow::after { background: radial-gradient(circle, #FFB83D, transparent 70%); opacity: .35; }
+.ws-hero .eyebrow { color: #FFB37A; }
+.coral { color: #FF8A5C; }
+.ws-hero .badge { color: #FFB37A; background: rgba(255, 138, 92, .12); box-shadow: inset 0 0 0 1px rgba(255, 138, 92, .4); }
+.ws-hero .badge::before { background: #FF8A5C; box-shadow: 0 0 0 4px rgba(255, 138, 92, .2); }
+.ws-hero .btn { background: linear-gradient(120deg, #FF6B4A, #FFB83D); color: #2A2238; }
+.ws-hero .btn:hover { color: #2A2238; }
+.ws-hero .phone { background: linear-gradient(160deg, #5A2A28, #2A2238); box-shadow: 0 30px 70px rgba(0, 0, 0, .5), inset 0 0 0 1.5px rgba(255, 200, 154, .3); }
+@media (max-width: 520px) { .nav { gap: 0; font-size: 0.9rem; } .nav a { padding: 8px 9px; } .nav .extra { display: none; } }
