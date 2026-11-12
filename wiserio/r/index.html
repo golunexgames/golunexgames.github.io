@@ -5,9 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Wiserio · Friend Room</title>
 <meta name="description" content="You're invited to a Wiserio Friend Room. Open the app to play the same questions.">
+<meta property="og:site_name" content="Golunex Games">
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#FF6B4A">
-<link rel="icon" href="/favicon.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap">
@@ -42,18 +43,22 @@
   <p id="lead">Open Wiserio to join your friend's room and play the same questions.</p>
   <div class="code" id="code"></div>
   <a class="btn primary" id="open" href="#">Open in Wiserio</a>
-  <a class="btn ghost" id="play" href="https://play.google.com/store/apps/details?id=com.golunex.wiserio">Get it on Google Play</a>
-  <div class="small" id="ios" hidden>App Store version coming soon.</div>
-  <div class="small" id="manual">No app? Install it, then enter the code under Friend Room → Join.</div>
+  <!-- LAUNCH DAY: while Wiserio is not public in the stores, the store buttons stay out and #soon is shown.
+       When it goes live, put the store buttons back right here, below "Open in Wiserio" (in place of "About Wiserio"), e.g.
+       <a class="btn ghost" id="play" href="https://play.google.com/store/apps/details?id=com.golunex.wiserio">Get it on Google Play</a>
+       (and an App Store button), turn #soon into an install hint (EN + TR text in the script), and set STORE in the script to the Play URL. -->
+  <a class="btn ghost" id="about" href="https://golunexgames.github.io/wiserio/">About Wiserio</a>
+  <div class="small" id="soon">Wiserio is coming soon to iPhone and Android. If you already have it, open the app and enter the code under Friend Room → Join.</div>
   <div class="small" id="bad" hidden>This link has no room code.</div>
 </main>
 <script>
 (function () {
   var tr = (navigator.language || "").toLowerCase().indexOf("tr") === 0;
   var T = tr ? {
-    title: "Davet edildin!", lead: "Arkadaşının odasına katılmak ve aynı soruları oynamak için Wiserio'i aç.",
-    open: "Wiserio'de aç", play: "Google Play'den indir", ios: "App Store sürümü yakında.",
-    manual: "Uygulama yok mu? İndir, sonra Arkadaş Odası → Kodla katıl bölümüne kodu yaz.", bad: "Bu bağlantıda oda kodu yok."
+    title: "Davet edildin!", lead: "Arkadaşının odasına katılmak ve aynı soruları oynamak için Wiserio'yu aç.",
+    open: "Wiserio'da aç", play: "Google Play'den indir", about: "Wiserio hakkında",
+    soon: "Wiserio çok yakında iPhone ve Android'de. Uygulama sende varsa aç ve kodu Arkadaş Odası → Kodla katıl bölümüne yaz.",
+    bad: "Bu bağlantıda oda kodu yok."
   } : null;
   if (T) {
     document.documentElement.lang = "tr";
@@ -66,12 +71,13 @@
   document.getElementById("code").textContent = code;
   var ua = navigator.userAgent || "";
   var android = /Android/i.test(ua), ios = /iPhone|iPad|iPod/i.test(ua);
-  var play = document.getElementById("play").href;
+  // where Android goes when the app is not installed. LAUNCH DAY: switch to
+  // "https://play.google.com/store/apps/details?id=com.golunex.wiserio" once the Play listing is public.
+  var STORE = "https://golunexgames.github.io/wiserio/";
   var url = android
-    ? "intent://room/" + code + "#Intent;scheme=wiserio;package=com.golunex.wiserio;S.browser_fallback_url=" + encodeURIComponent(play) + ";end"
+    ? "intent://room/" + code + "#Intent;scheme=wiserio;package=com.golunex.wiserio;S.browser_fallback_url=" + encodeURIComponent(STORE) + ";end"
     : "wiserio://room/" + code;
   openBtn.href = url;
-  if (ios) document.getElementById("ios").hidden = false;
   if (android || ios) setTimeout(function () { location.href = url; }, 300); // try the app straight away
 })();
 </script>

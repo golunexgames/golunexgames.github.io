@@ -5,8 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Delete your Wiserio data</title>
 <meta name="description" content="How to delete your Wiserio player data. Wiserio verilerini silme adımları.">
+<meta property="og:title" content="Delete your Wiserio data">
+<meta property="og:description" content="How to delete your Wiserio player data. Wiserio verilerini silme adımları.">
+<meta property="og:url" content="https://golunexgames.github.io/wiserio/delete-data/">
+<meta property="og:site_name" content="Golunex Games">
+<link rel="canonical" href="https://golunexgames.github.io/wiserio/delete-data/">
 <meta name="theme-color" content="#120A2C">
-<link rel="icon" href="/favicon.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap">
@@ -60,12 +65,19 @@
     <li>All daily quiz results (answers, times, points) and with them your leaderboard entries and streak</li>
     <li>The list of questions you have seen</li>
     <li>Your Friend Room plays and results, league entries, badges and streak freezes</li>
-    <li>Your purchases record and push notification token (a Plus subscription itself is cancelled in Google Play or your Apple ID settings)</li>
+    <li>Your invite code, who invited you and your invite count</li>
+    <li>Your push notification token</li>
     <li>The link to your Google or Apple account, if you added one (the Apple link is also revoked with Apple)</li>
   </ul>
 
   <h2>What we keep</h2>
-  <p>Question reports you sent (the question, the reason and your short note) stay, because they help us keep questions correct, but they are anonymised: nothing links them to you any more. If you wrote something personal in a note and want it removed, email us.</p>
+  <p>These records stay, but nothing links them to you any more:</p>
+  <ul>
+    <li><strong>Question reports</strong> you sent (the question, the reason and your short note), because they help us keep questions correct. If you wrote something personal in a note and want it removed, email us.</li>
+    <li><strong>Purchase records</strong>: a fingerprint (hash) of the purchase token or transaction ID, the product, the purchase date and, for Plus, the end date. The player ID in them is replaced by a random value. We keep them so the same purchase cannot be used twice, and so Plus or Remove ads can be restored later from the same Google Play or App Store account. They have no fixed deletion date, because a purchase can be restored at any time while the game is offered.</li>
+    <li><strong>Rooms you set up</strong>: the room code, the optional room name, the list of questions and the country, so friends who played them still see their results. The owner is replaced by a random value. Rooms close to new plays after 48 hours; the room record currently has no automatic deletion date. If a room name contains something personal, email us and we will remove it.</li>
+  </ul>
+  <p>Deleting your data does not cancel a Plus subscription: cancel it in Google Play (Subscriptions) or in your Apple ID settings.</p>
 
   <h2>Data on your phone</h2>
   <p>Your settings and reminder time are stored only on your device. To delete them, uninstall the game: on Android go to Settings → Apps → Wiserio → Storage → Clear data, on iPhone press and hold the Wiserio icon → Remove App → Delete App. Doing this alone does not delete the data on our server; use "Delete my data" in the game or email us for that.</p>
@@ -80,11 +92,11 @@
   <h1>Verilerini sil</h1>
   <div class="lang-switch"><a href="#en">English</a><a href="#tr">Türkçe</a></div>
 
-  <p style="margin-top: 22px;">Wiserio'de kayıt olmazsın: Oyunu ilk açtığında oyun anonim bir oyuncu oluşturur. Bu oyuncuyu ve ona bağlı tüm verileri istediğin zaman silebilirsin.</p>
+  <p style="margin-top: 22px;">Wiserio'da kayıt olmazsın: Oyunu ilk açtığında oyun anonim bir oyuncu oluşturur. Bu oyuncuyu ve ona bağlı tüm verileri istediğin zaman silebilirsin.</p>
 
   <h2>Oyun içinden sil</h2>
   <ul>
-    <li>Wiserio'i aç ve ana ekranın sağ üstündeki <strong>dişli</strong> simgesine dokun.</li>
+    <li>Wiserio'yu aç ve ana ekranın sağ üstündeki <strong>dişli</strong> simgesine dokun.</li>
     <li><strong>Verilerimi sil</strong>'e dokun ve yine <strong>Verilerimi sil</strong> ile onayla.</li>
     <li>Oyuncun, adın, sonuçların, serin ve oda oyunların sunucumuzdan hemen silinir; oyun telefonunda sıfırlanır.</li>
   </ul>
@@ -92,7 +104,7 @@
   <h2>Ya da e-postayla iste</h2>
   <p>Oyun artık yüklü değilse:</p>
   <ul>
-    <li>Hâlâ açabiliyorsan Wiserio'i aç ve görünen adına <strong>Ayarlar → İsim</strong> bölümünden bak. Hâlâ varsayılan "Player-…" adındaysa onu aynen not al ya da sadece senin seçeceğin bir adla değiştir; böylece oyuncunu bulabiliriz.</li>
+    <li>Hâlâ açabiliyorsan Wiserio'yu aç ve görünen adına <strong>Ayarlar → İsim</strong> bölümünden bak. Hâlâ varsayılan "Player-…" adındaysa onu aynen not al ya da sadece senin seçeceğin bir adla değiştir; böylece oyuncunu bulabiliriz.</li>
     <li><a href="mailto:golunexgames@gmail.com?subject=Wiserio%20verilerimi%20sil">golunexgames@gmail.com</a> adresine <strong>"Wiserio verilerimi sil"</strong> konulu bir e-posta gönder. Görünen adını, oyundaki ülkeni ve en son ne zaman Günün Yarışması'nı oynadığını yaz.</li>
     <li>Verileri 30 gün içinde siler ve sana onay yanıtı göndeririz.</li>
   </ul>
@@ -104,12 +116,19 @@
     <li>Tüm günlük yarışma sonuçların (cevaplar, süreler, puanlar) ve bunlarla birlikte sıralama kayıtların ve serin</li>
     <li>Gördüğün soruların listesi</li>
     <li>Arkadaş Odası oyunların ve sonuçların, lig kayıtların, rozetlerin ve seri dondurma hakların</li>
-    <li>Satın alma kaydın ve bildirim anahtarın (Plus aboneliğinin kendisi Google Play'den ya da Apple Kimliği ayarlarından iptal edilir)</li>
+    <li>Davet kodun, seni kimin davet ettiği ve davet sayın</li>
+    <li>Bildirim anahtarın</li>
     <li>Eklediysen Google ya da Apple hesabınla olan bağlantı (Apple bağlantısı Apple nezdinde de iptal edilir)</li>
   </ul>
 
   <h2>Neler saklanır</h2>
-  <p>Gönderdiğin soru bildirimleri (soru, neden ve kısa notun) soruları doğru tutmamıza yardım ettiği için kalır, ama anonimleştirilir: Artık hiçbir şey onları seninle ilişkilendirmez. Bir notta kişisel bir şey yazdıysan ve silinmesini istiyorsan bize yaz.</p>
+  <p>Şu kayıtlar kalır, ama artık hiçbir şey onları seninle ilişkilendirmez:</p>
+  <ul>
+    <li><strong>Gönderdiğin soru bildirimleri</strong> (soru, neden ve kısa notun), çünkü soruları doğru tutmamıza yardım ederler. Bir notta kişisel bir şey yazdıysan ve silinmesini istiyorsan bize yaz.</li>
+    <li><strong>Satın alma kayıtları</strong>: satın alma anahtarının ya da işlem kimliğinin bir özeti (hash), ürün, satın alma tarihi ve Plus için bitiş tarihi. İçlerindeki oyuncu kimliği rastgele bir değerle değiştirilir. Aynı satın almanın iki kez kullanılmasını önlemek ve Plus ya da Reklamları kaldır'ın daha sonra aynı Google Play veya App Store hesabından geri yüklenebilmesi için saklarız. Oyun sunulduğu sürece bir satın alma her an geri yüklenebileceği için belirli bir silinme tarihleri yoktur.</li>
+    <li><strong>Kurduğun odalar</strong>: oda kodu, isteğe bağlı oda adı, soru listesi ve ülke; odada oynayan arkadaşların sonuçlarını görmeye devam etsin diye. Oda sahibi rastgele bir değerle değiştirilir. Odalar 48 saat sonra yeni oyunlara kapanır; oda kaydının şu an otomatik bir silinme tarihi yoktur. Bir oda adında kişisel bir bilgi varsa bize yaz, kaldıralım.</li>
+  </ul>
+  <p>Verilerini silmek Plus aboneliğini iptal etmez: aboneliği Google Play'den (Abonelikler) ya da Apple Kimliği ayarlarından iptal et.</p>
 
   <h2>Telefonundaki veriler</h2>
   <p>Ayarların ve hatırlatma saatin yalnızca cihazında durur. Silmek için oyunu kaldır: Android'de Ayarlar → Uygulamalar → Wiserio → Depolama → Verileri temizle, iPhone'da Wiserio simgesine basılı tut → Uygulamayı Kaldır → Uygulamayı Sil. Bu tek başına sunucumuzdaki verileri silmez; onun için oyundaki "Verilerimi sil"i kullan veya bize yaz.</p>

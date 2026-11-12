@@ -5,8 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Wiserio Privacy Policy</title>
 <meta name="description" content="How Wiserio by Golunex Games handles your data. Gizlilik politikasının Türkçesi de bu sayfada.">
+<meta property="og:title" content="Wiserio Privacy Policy">
+<meta property="og:description" content="How Wiserio by Golunex Games handles your data. Gizlilik politikasının Türkçesi de bu sayfada.">
+<meta property="og:url" content="https://golunexgames.github.io/wiserio/privacy/">
+<meta property="og:site_name" content="Golunex Games">
+<link rel="canonical" href="https://golunexgames.github.io/wiserio/privacy/">
 <meta name="theme-color" content="#120A2C">
-<link rel="icon" href="/favicon.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap">
@@ -34,13 +39,14 @@
 <article id="en" lang="en">
   <span class="eyebrow">Wiserio</span>
   <h1>Privacy Policy</h1>
-  <p class="meta">Effective 11 November 2026 · Golunex Games</p>
+  <p class="meta">Effective 12 November 2026 · Golunex Games</p>
   <div class="lang-switch"><a href="#en">English</a><a href="#tr">Türkçe</a></div>
 
   <p style="margin-top: 22px;">This policy explains what data the Wiserio app ("the game", on Android and iPhone/iPad) uses, why, and what you can do about it. Wiserio is made by Golunex Games ("we", "us"), an independent developer. You can reach us at <a href="mailto:golunexgames@gmail.com">golunexgames@gmail.com</a>.</p>
+  <p><strong>Data controller:</strong> Murat Altınay (Golunex Games), Türkiye · <a href="mailto:golunexgames@gmail.com">golunexgames@gmail.com</a></p>
 
   <div class="box">
-    <strong>In short:</strong> you never give us your email, real name, contacts or precise location, and you do not need an account. To run the daily quiz, the leaderboards, leagues and Friend Rooms, the game creates an anonymous player ID. The free version shows ads through Google AdMob; optional purchases go through Google Play or the App Store. We use Google Firebase to count how the game is used and to receive crash reports. We do not sell your data.
+    <strong>In short:</strong> you never give us your email, real name, contacts or precise location, and you do not need an account. To run the daily quiz, the leaderboards, leagues and Friend Rooms, the game creates an anonymous player ID. The free version shows ads through Google AdMob; optional purchases go through Google Play or the App Store. On Android we use Google Firebase to count how the game is used and to receive crash reports. We do not sell your data.
   </div>
 
   <h2>1. Data on your phone</h2>
@@ -52,18 +58,20 @@
   <table>
     <thead><tr><th>Data</th><th>Why</th></tr></thead>
     <tbody>
-      <tr><td>A random player ID and a secret key, created automatically on first launch (the key is stored only as a one-way hash)</td><td>To recognise your game without an account</td></tr>
-      <tr><td>Your display name (it starts as "Player-" plus six characters) and the avatar you pick from the game's drawings</td><td>Shown publicly on the leaderboards, in your weekly league and to the other players in your Friend Rooms</td></tr>
-      <tr><td>Your country: taken from your phone's region setting, or, if there is none, from Cloudflare's guess based on your connection, or as you pick it. You can change it once every 30 days</td><td>To choose your local questions, your country leaderboard and your local day. We never ask for your location</td></tr>
-      <tr><td>Daily quiz answers: for each question, the answer you chose, the time you took, any joker used and the points; plus your score, date and country for the day; your streak, streak freezes, league group and badges</td><td>To score and rank results fairly, run the weekly leagues and show your streak and your own statistics</td></tr>
-      <tr><td>Which questions you have already seen, and how many Free Play rounds you played today</td><td>So questions don't repeat, and for the daily Free Play limit</td></tr>
-      <tr><td>Friend Room plays: the room code, the optional room name, your answers, time, points and score. Rooms close to new plays after 48 hours</td><td>To show everyone's results side by side</td></tr>
-      <tr><td>Reports: questions you report (the reason, an optional note, whether you answered correctly) and names you report as inappropriate</td><td>To fix questions and keep names appropriate. If you delete your data, question reports stay but are no longer linked to you</td></tr>
-      <tr><td>If you choose "Continue with Google" or "Sign in with Apple": the stable account number Google or Apple gives our app for your account (not your email, name or photo). For Apple also a token that lets us revoke the link when you delete your data</td><td>So you can keep your name, results and streak on a new phone. Signing in is optional</td></tr>
-      <tr><td>A push notification token for your phone, and your language (only after you allow notifications)</td><td>To tell you when a friend finished a room you played or beat your score</td></tr>
-      <tr><td>Purchases: the product, a fingerprint (hash) of the purchase or transaction ID and, for Plus, its end date</td><td>To give you what you bought on every phone you use</td></tr>
-      <tr><td>Rewarded ads you watched (the reward and the time), as confirmed to our server by Google AdMob</td><td>To unlock the reward (an extra joker, a bonus question, more Free Play rounds or a saved streak)</td></tr>
-      <tr><td>A one-way, salted fingerprint (hash) of your connection's address, with a daily counter; the address itself is never stored. The counters are deleted after two days</td><td>To limit how many new players and rooms one connection can create per day, against abuse</td></tr>
+      <tr><td data-label="Data">A random player ID and a secret key, created automatically on first launch (the key is stored only as a one-way hash)</td><td data-label="Why">To recognise your game without an account</td></tr>
+      <tr><td data-label="Data">Your display name (it starts as "Player-" plus six characters) and the avatar you pick from the game's drawings</td><td data-label="Why">Shown publicly on the leaderboards, in your weekly league and to the other players in your Friend Rooms</td></tr>
+      <tr><td data-label="Data">Your country: taken from your phone's region setting, or, if there is none, from Cloudflare's guess based on your connection, or as you pick it. You can change it once every 30 days</td><td data-label="Why">To choose your local questions, your country leaderboard and your local day. We never ask for your location</td></tr>
+      <tr><td data-label="Data">Daily quiz answers: for each question, the answer you chose, the time you took, any joker used and the points; plus your score, date and country for the day; your streak, streak freezes, league group and badges</td><td data-label="Why">To score and rank results fairly, run the weekly leagues and show your streak and your own statistics</td></tr>
+      <tr><td data-label="Data">Which questions you have already seen, and how many Free Play rounds you played today</td><td data-label="Why">So questions don't repeat, and for the daily Free Play limit</td></tr>
+      <tr><td data-label="Data">Friend Room plays: the room code, the optional room name, your answers, time, points and score. Rooms close to new plays after 48 hours</td><td data-label="Why">To show everyone's results side by side</td></tr>
+      <tr><td data-label="Data">Rooms you set up: the room code, the optional room name, the list of questions and the country they come from, with you as the owner</td><td data-label="Why">So your friends can join and play the same questions</td></tr>
+      <tr><td data-label="Data">Friend invites: your invite code (made the first time you open the invite screen), who invited you (their player ID, if you entered a friend's code) and how many of your invites have been rewarded</td><td data-label="Why">To give the joker reward to both you and your friend, only once per new player, and to cap invite rewards against abuse</td></tr>
+      <tr><td data-label="Data">Reports: questions you report (the reason, an optional note, whether you answered correctly) and names you report as inappropriate</td><td data-label="Why">To fix questions and keep names appropriate. If you delete your data, question reports stay but are no longer linked to you</td></tr>
+      <tr><td data-label="Data">If you choose "Continue with Google" or "Sign in with Apple": the stable account number Google or Apple gives our app for your account (not your email, name or photo). For Apple also a token that lets us revoke the link when you delete your data</td><td data-label="Why">So you can keep your name, results and streak on a new phone. Signing in is optional</td></tr>
+      <tr><td data-label="Data">A push notification token for your phone, and your language. On iPhone it is saved only after you allow notifications. On Android the phone's notification token is saved when the app opens; whether a notification is actually shown depends on Android's notification permission (Android 13 and later) and your notification and reminder settings in the game</td><td data-label="Why">To tell you when a friend finished a room you played or beat your score</td></tr>
+      <tr><td data-label="Data">Purchases: the product, a fingerprint (hash) of the purchase token or transaction ID, the purchase date and, for Plus, its end date</td><td data-label="Why">To give you what you bought on every phone you use, and so the same purchase cannot be used twice</td></tr>
+      <tr><td data-label="Data">Rewarded ads you watched (the reward and the time), as confirmed to our server by Google AdMob</td><td data-label="Why">To unlock the reward (an extra joker, a bonus question, more Free Play rounds or a saved streak)</td></tr>
+      <tr><td data-label="Data">A one-way, salted fingerprint (hash) of your connection's address, with a daily counter; the address itself is never stored. The counters are deleted after two days</td><td data-label="Why">To limit how many new players and rooms one connection can create per day, against abuse</td></tr>
     </tbody>
   </table>
   </div>
@@ -72,27 +80,35 @@
   <h2>3. Services we use</h2>
   <ul>
     <li><strong>Cloudflare</strong> (Cloudflare Workers and D1) hosts our server and database. <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">Cloudflare Privacy Policy</a>.</li>
-    <li><strong>Google Firebase</strong>: <em>Analytics</em> counts how the game is used (for example that a daily quiz was started, a room created or the shop opened) with an app-instance ID, device model, OS version and approximate country, so we can improve the game; <em>Crashlytics</em> sends crash and error reports (device model, OS version, the error) so we can fix bugs; <em>Cloud Messaging</em> delivers push notifications. Firebase data is not linked to your name and is not used for ads. <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase privacy</a>.</li>
+    <li><strong>Google Firebase</strong>: in the Android version only, <em>Analytics</em> counts how the game is used (for example that a daily quiz was started, a room created or the shop opened) with an app-instance ID, device model, OS version and approximate country, so we can improve the game; <em>Crashlytics</em> sends crash and error reports (device model, OS version, the error) so we can fix bugs; <em>Cloud Messaging</em> delivers push notifications on both Android and iPhone. The iPhone version does not include Firebase Analytics or Crashlytics. Firebase data is not linked to your name and is not used for ads. <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase privacy</a>.</li>
     <li><strong>Sign in with Google</strong> and <strong>Sign in with Apple</strong>, only if you choose them. Our server checks the sign-in and keeps only the account number described above. <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a> · <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple Privacy Policy</a>.</li>
     <li><strong>Google AdMob</strong> shows the ads in the free version (between rounds, and rewarded ads you choose to watch). Where the law requires it (for example in the EU, the UK and Switzerland) we first ask for your consent with Google's consent form, and on iPhone iOS asks whether apps may track you; you can change your choice at any time under Settings → Ad privacy choices (shown where it applies) or in your phone's settings. AdMob may collect your device's advertising ID, IP address and information about the ads shown to deliver, measure and, with your consent, personalise ads. Players with Wiserio Plus or "Remove ads" see no ads. <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses data from apps that use its services</a>.</li>
     <li><strong>Google Play billing</strong> and the <strong>App Store</strong> handle purchases (Wiserio Plus, Remove ads, streak freezes). Google or Apple processes the payment; we never see your card or payment details. Our server checks each purchase with Google or Apple. <a href="https://payments.google.com/payments/apis-secure/u/0/get_legal_document?ldo=0&amp;ldt=privacynotice" rel="noopener">Google Payments Privacy Notice</a> · <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple Privacy Policy</a>.</li>
   </ul>
   <p>Your daily score can never be bought.</p>
+  <p><strong>Transfers outside Türkiye and the EU:</strong> our server and database run on Cloudflare, and Firebase and AdMob are provided by Google. These providers may process data in the United States and other countries outside Türkiye and the European Union. These transfers rely on the providers' standard contractual clauses and other appropriate safeguards, as provided for in Article 9 of the KVKK and Chapter V of the GDPR.</p>
 
   <h2>4. Legal basis</h2>
-  <p>We process the data in section 2 to provide the features you use (performance of our agreement with you) and to keep the leaderboards fair, the questions accurate and the service secure (our legitimate interest). Usage statistics and crash reports rely on our legitimate interest in keeping the game working and improving it. Personalised ads rely on your consent where the law requires it.</p>
+  <p>We process the data in section 2 to provide the features you use (performance of our agreement with you) and to keep the leaderboards fair, the questions accurate and the service secure (our legitimate interest). Usage statistics and crash reports (Android only) rely on our legitimate interest in keeping the game working and improving it. Personalised ads rely on your consent where the law requires it.</p>
 
   <h2>5. How long we keep data</h2>
-  <p>We keep your player record, name, avatar, country, results, seen questions and room plays for as long as your player ID exists, so your leaderboard history, streak and statistics remain available. We delete them when you delete your data (see section 6). Connection counters are deleted after two days. Question reports are kept, without any link to you, so that questions can still be checked. Firebase keeps analytics data for up to 14 months and crash reports for up to 90 days.</p>
+  <p>We keep your player record, name, avatar, country, results, seen questions and room plays for as long as your player ID exists, so your leaderboard history, streak and statistics remain available. We delete them when you delete your data (see section 6). Connection counters are deleted after two days. Question reports are kept, without any link to you, so that questions can still be checked.</p>
+  <p>Two kinds of records are kept, without any link to you, when you delete your data:</p>
+  <ul>
+    <li><strong>Purchase records</strong> (the fingerprint of the purchase token or transaction ID, the product, the purchase date and, for Plus, the end date). The player ID in them is replaced by a random value. We keep them so the same purchase cannot be redeemed twice, and so Plus or Remove ads can be restored later to a new player from the same Google Play or App Store account. They have no fixed deletion date, because a purchase can be restored at any time while the game is offered.</li>
+    <li><strong>Rooms you set up</strong> (the room code, the optional room name, the list of questions and the country), so friends who played them still see their results. The owner is replaced by a random value. Rooms close to new plays 48 hours after they are created; the room record itself currently has no automatic deletion date. If a room name contains something personal, email us and we will remove it.</li>
+  </ul>
+  <p>Firebase keeps analytics data for up to 14 months and crash reports for up to 90 days.</p>
 
   <h2>6. Your choices and rights</h2>
   <ul>
-    <li>Delete your data in the game: Settings (the gear on the home screen) → Delete my data. This removes your player, name, results, room plays, purchases record, push token and Google or Apple link from our server (and revokes the Apple link with Apple), and resets the game on your phone. Your question reports are anonymised. A Plus subscription is not cancelled by this: cancel it in Google Play or in your Apple ID settings.</li>
+    <li>Delete your data in the game: Settings (the gear on the home screen) → Delete my data. This removes your player, name, results, room plays, invite data, push token and Google or Apple link from our server (and revokes the Apple link with Apple), and resets the game on your phone. Your question reports, your purchase records and the rooms you set up are kept without any link to you (see section 5). A Plus subscription is not cancelled by this: cancel it in Google Play or in your Apple ID settings.</li>
     <li>Change your display name, avatar or country: Settings.</li>
     <li>Turn off reminders and notifications: Settings → Daily reminder, or in your phone's notification settings.</li>
     <li>Ask for a copy, a correction or the deletion of your data by email: see <a href="/wiserio/delete-data/">Delete your data</a> or write to <a href="mailto:golunexgames@gmail.com">golunexgames@gmail.com</a>.</li>
   </ul>
-  <p>Depending on where you live (for example under the GDPR in the EU or the KVKK in Turkey), you may also have the right to object to processing, to restrict it and to complain to your data protection authority.</p>
+  <p>Depending on where you live (for example under the GDPR in the EU or the KVKK in Türkiye), you may also have the right to object to processing, to restrict it and to complain to your data protection authority.</p>
+  <p><strong>US residents (for example under the CCPA in California):</strong> we do not sell your personal information. When Google AdMob shows personalised ads, this may count as "sharing" personal information for cross-context behavioural advertising under the CCPA. You can turn this off at any time: on iPhone, do not allow tracking (Settings → Privacy &amp; Security → Tracking); on Android, delete your advertising ID in your phone's settings (Settings → Privacy → Ads, or Settings → Google → Ads, depending on the phone). Where it is shown, you can also use Settings → Ad privacy choices in the game. You also have the right to know, correct and delete your personal information, and we will not treat you differently for using these rights.</p>
 
   <h2>7. Children</h2>
   <p>Wiserio is a general-audience quiz game and is not directed at children under 13. We do not knowingly collect personal data from children. If you believe a child has sent us personal data, email us and we will delete it.</p>
@@ -104,7 +120,7 @@
   <p>If we change this policy we will update the date above, and for important changes we will also tell you in the game.</p>
 
   <h2>10. Contact</h2>
-  <p>Golunex Games · <a href="mailto:golunexgames@gmail.com">golunexgames@gmail.com</a></p>
+  <p>Data controller: Murat Altınay (Golunex Games), Türkiye · <a href="mailto:golunexgames@gmail.com">golunexgames@gmail.com</a></p>
 </article>
 
 <hr class="divider">
@@ -112,13 +128,14 @@
 <article id="tr" lang="tr">
   <span class="eyebrow">Wiserio</span>
   <h1>Gizlilik Politikası</h1>
-  <p class="meta">Yürürlük: 11 Kasım 2026 · Golunex Games</p>
+  <p class="meta">Yürürlük: 12 Kasım 2026 · Golunex Games</p>
   <div class="lang-switch"><a href="#en">English</a><a href="#tr">Türkçe</a></div>
 
   <p style="margin-top: 22px;">Bu politika, Wiserio uygulamasının ("oyun"; Android ve iPhone/iPad) hangi verileri neden kullandığını ve senin neler yapabileceğini anlatır. Wiserio'yu bağımsız geliştirici Golunex Games ("biz") yapar. Bize <a href="mailto:golunexgames@gmail.com">golunexgames@gmail.com</a> adresinden ulaşabilirsin.</p>
+  <p><strong>Veri sorumlusu:</strong> Murat Altınay (Golunex Games), Türkiye · <a href="mailto:golunexgames@gmail.com">golunexgames@gmail.com</a></p>
 
   <div class="box">
-    <strong>Kısaca:</strong> bize e-postanı, gerçek adını, rehberini ya da tam konumunu hiç vermezsin; hesap da gerekmez. Günlük yarışma, sıralamalar, ligler ve Arkadaş Odaları için oyun anonim bir oyuncu kimliği oluşturur. Ücretsiz sürümde Google AdMob ile reklam gösterilir; isteğe bağlı satın almalar Google Play ya da App Store üzerinden yapılır. Oyunun nasıl kullanıldığını saymak ve çökme raporları almak için Google Firebase kullanırız. Verilerini satmayız.
+    <strong>Kısaca:</strong> bize e-postanı, gerçek adını, rehberini ya da tam konumunu hiç vermezsin; hesap da gerekmez. Günlük yarışma, sıralamalar, ligler ve Arkadaş Odaları için oyun anonim bir oyuncu kimliği oluşturur. Ücretsiz sürümde Google AdMob ile reklam gösterilir; isteğe bağlı satın almalar Google Play ya da App Store üzerinden yapılır. Android sürümünde oyunun nasıl kullanıldığını saymak ve çökme raporları almak için Google Firebase kullanırız. Verilerini satmayız.
   </div>
 
   <h2>1. Telefonundaki veriler</h2>
@@ -130,18 +147,20 @@
   <table>
     <thead><tr><th>Veri</th><th>Neden</th></tr></thead>
     <tbody>
-      <tr><td>İlk açılışta otomatik oluşturulan rastgele bir oyuncu kimliği ve gizli anahtar (anahtar yalnızca tek yönlü özet olarak saklanır)</td><td>Oyununu hesap olmadan tanımak için</td></tr>
-      <tr><td>Görünen adın ("Player-" ve altı karakterle başlar) ve oyunun çizimlerinden seçtiğin avatar</td><td>Sıralamalarda, haftalık liginde ve Arkadaş Odalarındaki diğer oyunculara herkese açık olarak gösterilir</td></tr>
-      <tr><td>Ülken: telefonunun bölge ayarından, yoksa Cloudflare'in bağlantına göre yaptığı tahminden ya da senin seçiminden alınır. 30 günde bir değiştirebilirsin</td><td>Yerel sorularını, ülke sıralamanı ve yerel gününü belirlemek için. Konumunu asla istemeyiz</td></tr>
-      <tr><td>Günlük yarışma cevapları: her soru için seçtiğin cevap, harcadığın süre, kullandığın joker ve puan; günün skoru, tarihi ve ülkesi; serin, seri dondurma hakların, lig grubun ve rozetlerin</td><td>Sonuçları adil puanlamak ve sıralamak, haftalık ligleri yürütmek, serini ve istatistiklerini göstermek için</td></tr>
-      <tr><td>Daha önce gördüğün sorular ve bugün oynadığın Serbest Tur sayısı</td><td>Sorular tekrar etmesin ve günlük Serbest Tur sınırı için</td></tr>
-      <tr><td>Arkadaş Odası oyunları: oda kodu, isteğe bağlı oda adı, cevapların, süren, puanın ve skorun. Odalar 48 saat sonra yeni oyunlara kapanır</td><td>Herkesin sonuçlarını yan yana göstermek için</td></tr>
-      <tr><td>Bildirimler: bildirdiğin sorular (seçtiğin neden, isteğe bağlı not, doğru cevaplayıp cevaplamadığın) ve uygunsuz diye bildirdiğin isimler</td><td>Soruları düzeltmek ve isimleri uygun tutmak için. Verilerini silersen soru bildirimlerin kalır ama artık seninle bağlantılı olmaz</td></tr>
-      <tr><td>"Google ile devam et" ya da "Apple ile giriş yap"ı seçersen: Google'ın veya Apple'ın hesabın için uygulamamıza verdiği sabit hesap numarası (e-postan, adın ya da fotoğrafın değil). Apple için ayrıca, verilerini sildiğinde bağlantıyı iptal etmemizi sağlayan bir anahtar</td><td>Telefon değiştirsen de adın, sonuçların ve serin seninle kalsın diye. Giriş isteğe bağlıdır</td></tr>
-      <tr><td>Telefonun için bir bildirim anahtarı ve dilin (yalnızca bildirimlere izin verdikten sonra)</td><td>Bir arkadaşın oynadığın bir odayı bitirdiğinde ya da puanını geçtiğinde sana haber vermek için</td></tr>
-      <tr><td>Satın almalar: ürün, satın alma ya da işlem kimliğinin bir özeti (hash) ve Plus için bitiş tarihi</td><td>Satın aldığını kullandığın her telefonda sana vermek için</td></tr>
-      <tr><td>İzlediğin ödüllü reklamlar (ödül ve zaman), Google AdMob'un sunucumuza bildirdiği şekliyle</td><td>Ödülü açmak için (ek joker, bonus soru, ek Serbest Tur ya da seri kurtarma)</td></tr>
-      <tr><td>Bağlantı adresinin tek yönlü, tuzlanmış bir özeti (hash) ve günlük bir sayaç; adresin kendisi asla saklanmaz. Sayaçlar iki gün sonra silinir</td><td>Kötüye kullanıma karşı, bir bağlantıdan günde oluşturulabilecek yeni oyuncu ve oda sayısını sınırlamak için</td></tr>
+      <tr><td data-label="Veri">İlk açılışta otomatik oluşturulan rastgele bir oyuncu kimliği ve gizli anahtar (anahtar yalnızca tek yönlü özet olarak saklanır)</td><td data-label="Neden">Oyununu hesap olmadan tanımak için</td></tr>
+      <tr><td data-label="Veri">Görünen adın ("Player-" ve altı karakterle başlar) ve oyunun çizimlerinden seçtiğin avatar</td><td data-label="Neden">Sıralamalarda, haftalık liginde ve Arkadaş Odalarındaki diğer oyunculara herkese açık olarak gösterilir</td></tr>
+      <tr><td data-label="Veri">Ülken: telefonunun bölge ayarından, yoksa Cloudflare'in bağlantına göre yaptığı tahminden ya da senin seçiminden alınır. 30 günde bir değiştirebilirsin</td><td data-label="Neden">Yerel sorularını, ülke sıralamanı ve yerel gününü belirlemek için. Konumunu asla istemeyiz</td></tr>
+      <tr><td data-label="Veri">Günlük yarışma cevapları: her soru için seçtiğin cevap, harcadığın süre, kullandığın joker ve puan; günün skoru, tarihi ve ülkesi; serin, seri dondurma hakların, lig grubun ve rozetlerin</td><td data-label="Neden">Sonuçları adil puanlamak ve sıralamak, haftalık ligleri yürütmek, serini ve istatistiklerini göstermek için</td></tr>
+      <tr><td data-label="Veri">Daha önce gördüğün sorular ve bugün oynadığın Serbest Tur sayısı</td><td data-label="Neden">Sorular tekrar etmesin ve günlük Serbest Tur sınırı için</td></tr>
+      <tr><td data-label="Veri">Arkadaş Odası oyunları: oda kodu, isteğe bağlı oda adı, cevapların, süren, puanın ve skorun. Odalar 48 saat sonra yeni oyunlara kapanır</td><td data-label="Neden">Herkesin sonuçlarını yan yana göstermek için</td></tr>
+      <tr><td data-label="Veri">Kurduğun odalar: oda kodu, isteğe bağlı oda adı, soru listesi ve soruların geldiği ülke; oda sahibi olarak sen</td><td data-label="Neden">Arkadaşların katılıp aynı soruları oynayabilsin diye</td></tr>
+      <tr><td data-label="Veri">Arkadaş davetleri: davet kodun (davet ekranını ilk açtığında oluşturulur), seni kimin davet ettiği (bir arkadaşının kodunu girdiysen onun oyuncu kimliği) ve davetlerinden kaçının ödüllendirildiği</td><td data-label="Neden">Joker ödülünü hem sana hem arkadaşına, her yeni oyuncu için yalnızca bir kez vermek ve kötüye kullanıma karşı davet ödüllerini sınırlamak için</td></tr>
+      <tr><td data-label="Veri">Bildirimler: bildirdiğin sorular (seçtiğin neden, isteğe bağlı not, doğru cevaplayıp cevaplamadığın) ve uygunsuz diye bildirdiğin isimler</td><td data-label="Neden">Soruları düzeltmek ve isimleri uygun tutmak için. Verilerini silersen soru bildirimlerin kalır ama artık seninle bağlantılı olmaz</td></tr>
+      <tr><td data-label="Veri">"Google ile devam et" ya da "Apple ile giriş yap"ı seçersen: Google'ın veya Apple'ın hesabın için uygulamamıza verdiği sabit hesap numarası (e-postan, adın ya da fotoğrafın değil). Apple için ayrıca, verilerini sildiğinde bağlantıyı iptal etmemizi sağlayan bir anahtar</td><td data-label="Neden">Telefon değiştirsen de adın, sonuçların ve serin seninle kalsın diye. Giriş isteğe bağlıdır</td></tr>
+      <tr><td data-label="Veri">Telefonun için bir bildirim anahtarı ve dilin. iPhone'da yalnızca bildirimlere izin verdikten sonra kaydedilir. Android'de telefonun bildirim anahtarı uygulama açıldığında kaydedilir; bildirimin gerçekten gösterilip gösterilmemesi Android'in bildirim iznine (Android 13 ve sonrası) ve oyundaki bildirim ve hatırlatma ayarlarına bağlıdır</td><td data-label="Neden">Bir arkadaşın oynadığın bir odayı bitirdiğinde ya da puanını geçtiğinde sana haber vermek için</td></tr>
+      <tr><td data-label="Veri">Satın almalar: ürün, satın alma anahtarının ya da işlem kimliğinin bir özeti (hash), satın alma tarihi ve Plus için bitiş tarihi</td><td data-label="Neden">Satın aldığını kullandığın her telefonda sana vermek ve aynı satın almanın iki kez kullanılmasını önlemek için</td></tr>
+      <tr><td data-label="Veri">İzlediğin ödüllü reklamlar (ödül ve zaman), Google AdMob'un sunucumuza bildirdiği şekliyle</td><td data-label="Neden">Ödülü açmak için (ek joker, bonus soru, ek Serbest Tur ya da seri kurtarma)</td></tr>
+      <tr><td data-label="Veri">Bağlantı adresinin tek yönlü, tuzlanmış bir özeti (hash) ve günlük bir sayaç; adresin kendisi asla saklanmaz. Sayaçlar iki gün sonra silinir</td><td data-label="Neden">Kötüye kullanıma karşı, bir bağlantıdan günde oluşturulabilecek yeni oyuncu ve oda sayısını sınırlamak için</td></tr>
     </tbody>
   </table>
   </div>
@@ -150,27 +169,35 @@
   <h2>3. Kullandığımız hizmetler</h2>
   <ul>
     <li><strong>Cloudflare</strong> (Cloudflare Workers ve D1) sunucumuzu ve veritabanımızı barındırır. <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">Cloudflare Gizlilik Politikası</a>.</li>
-    <li><strong>Google Firebase</strong>: <em>Analytics</em>, oyunun nasıl kullanıldığını (örneğin bir günlük yarışmanın başlatıldığını, bir oda kurulduğunu ya da mağazanın açıldığını) bir uygulama kurulum kimliği, cihaz modeli, işletim sistemi sürümü ve yaklaşık ülke ile sayar; böylece oyunu geliştiririz. <em>Crashlytics</em>, hataları düzeltebilmemiz için çökme ve hata raporları (cihaz modeli, işletim sistemi sürümü, hata) gönderir. <em>Cloud Messaging</em> bildirimleri iletir. Firebase verileri adınla ilişkilendirilmez ve reklam için kullanılmaz. <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase gizlilik</a>.</li>
+    <li><strong>Google Firebase</strong>: yalnızca Android sürümünde <em>Analytics</em>, oyunun nasıl kullanıldığını (örneğin bir günlük yarışmanın başlatıldığını, bir oda kurulduğunu ya da mağazanın açıldığını) bir uygulama kurulum kimliği, cihaz modeli, işletim sistemi sürümü ve yaklaşık ülke ile sayar; böylece oyunu geliştiririz. <em>Crashlytics</em>, hataları düzeltebilmemiz için çökme ve hata raporları (cihaz modeli, işletim sistemi sürümü, hata) gönderir. <em>Cloud Messaging</em> hem Android'de hem iPhone'da bildirimleri iletir. iPhone sürümünde Firebase Analytics ve Crashlytics bulunmaz. Firebase verileri adınla ilişkilendirilmez ve reklam için kullanılmaz. <a href="https://firebase.google.com/support/privacy" rel="noopener">Firebase gizlilik</a>.</li>
     <li><strong>Google ile giriş</strong> ve <strong>Apple ile giriş</strong>, yalnızca seçersen. Sunucumuz girişi doğrular ve yalnızca yukarıdaki hesap numarasını saklar. <a href="https://policies.google.com/privacy?hl=tr" rel="noopener">Google Gizlilik Politikası</a> · <a href="https://www.apple.com/tr/legal/privacy/" rel="noopener">Apple Gizlilik Politikası</a>.</li>
     <li><strong>Google AdMob</strong>, ücretsiz sürümde reklamları gösterir (turlar arasında ve izlemeyi seçtiğin ödüllü reklamlar). Yasanın gerektirdiği yerlerde (örneğin AB, Birleşik Krallık ve İsviçre) önce Google'ın izin formuyla onayını isteriz; iPhone'da iOS, uygulamaların seni izleyip izleyemeyeceğini sorar. Seçimini istediğin zaman Ayarlar → Reklam gizliliği seçenekleri'nden (geçerli olduğu yerlerde görünür) ya da telefonunun ayarlarından değiştirebilirsin. AdMob reklamları göstermek, ölçmek ve onay verirsen kişiselleştirmek için cihazının reklam kimliğini, IP adresini ve gösterilen reklamlarla ilgili bilgileri toplayabilir. Wiserio Plus ya da "Reklamları kaldır" sahibi oyuncular reklam görmez. <a href="https://policies.google.com/technologies/partner-sites?hl=tr" rel="noopener">Google'ın, hizmetlerini kullanan uygulamalardaki verileri nasıl kullandığı</a>.</li>
     <li><strong>Google Play faturalandırma</strong> ve <strong>App Store</strong> satın almaları (Wiserio Plus, Reklamları kaldır, seri dondurma hakları) yürütür. Ödemeyi Google ya da Apple işler; kart ya da ödeme bilgilerini asla görmeyiz. Sunucumuz her satın almayı Google'a ya da Apple'a doğrulatır. <a href="https://payments.google.com/payments/apis-secure/u/0/get_legal_document?ldo=0&amp;ldt=privacynotice&amp;hl=tr" rel="noopener">Google Payments Gizlilik Bildirimi</a> · <a href="https://www.apple.com/tr/legal/privacy/" rel="noopener">Apple Gizlilik Politikası</a>.</li>
   </ul>
   <p>Günlük puanın asla satın alınamaz.</p>
+  <p><strong>Yurt dışına aktarım:</strong> sunucumuz ve veritabanımız Cloudflare üzerinde çalışır; Firebase ve AdMob'u Google sağlar. Bu sağlayıcılar verileri ABD dahil Türkiye ve Avrupa Birliği dışındaki ülkelerde işleyebilir. Bu aktarımlar, KVKK'nın 9. maddesi ve GDPR'ın V. bölümünde öngörüldüğü şekilde, sağlayıcıların standart sözleşme hükümlerine ve diğer uygun güvencelere dayanır.</p>
 
   <h2>4. Hukuki dayanak</h2>
-  <p>2. bölümdeki verileri, kullandığın özellikleri sunmak (seninle aramızdaki sözleşmenin ifası) ve sıralamaları adil, soruları doğru, hizmeti güvenli tutmak (meşru menfaatimiz) için işleriz. Kullanım istatistikleri ve çökme raporları, oyunu çalışır tutma ve geliştirme konusundaki meşru menfaatimize dayanır. Kişiselleştirilmiş reklamlar, yasanın gerektirdiği yerlerde senin onayına dayanır.</p>
+  <p>2. bölümdeki verileri, kullandığın özellikleri sunmak (seninle aramızdaki sözleşmenin ifası) ve sıralamaları adil, soruları doğru, hizmeti güvenli tutmak (meşru menfaatimiz) için işleriz. Kullanım istatistikleri ve çökme raporları (yalnızca Android), oyunu çalışır tutma ve geliştirme konusundaki meşru menfaatimize dayanır. Kişiselleştirilmiş reklamlar, yasanın gerektirdiği yerlerde senin onayına dayanır.</p>
 
   <h2>5. Saklama süresi</h2>
-  <p>Oyuncu kaydını, adını, avatarını, ülkeni, sonuçlarını, gördüğün soruları ve oda oyunlarını oyuncu kimliğin var olduğu sürece saklarız; böylece sıralama geçmişin, serin ve istatistiklerin kalır. Verilerini sildiğinde bunları sileriz (bkz. 6. bölüm). Bağlantı sayaçları iki gün sonra silinir. Soru bildirimleri, sorular yine kontrol edilebilsin diye seninle bağlantısı olmadan saklanır. Firebase analiz verilerini en fazla 14 ay, çökme raporlarını en fazla 90 gün saklar.</p>
+  <p>Oyuncu kaydını, adını, avatarını, ülkeni, sonuçlarını, gördüğün soruları ve oda oyunlarını oyuncu kimliğin var olduğu sürece saklarız; böylece sıralama geçmişin, serin ve istatistiklerin kalır. Verilerini sildiğinde bunları sileriz (bkz. 6. bölüm). Bağlantı sayaçları iki gün sonra silinir. Soru bildirimleri, sorular yine kontrol edilebilsin diye seninle bağlantısı olmadan saklanır.</p>
+  <p>Verilerini sildiğinde iki tür kayıt seninle bağlantısı kesilerek saklanır:</p>
+  <ul>
+    <li><strong>Satın alma kayıtları</strong> (satın alma anahtarının ya da işlem kimliğinin özeti, ürün, satın alma tarihi ve Plus için bitiş tarihi). İçlerindeki oyuncu kimliği rastgele bir değerle değiştirilir. Aynı satın almanın iki kez kullanılmasını önlemek ve Plus ya da Reklamları kaldır'ın daha sonra aynı Google Play veya App Store hesabından yeni bir oyuncuya geri yüklenebilmesi için saklarız. Oyun sunulduğu sürece bir satın alma her an geri yüklenebileceği için belirli bir silinme tarihleri yoktur.</li>
+    <li><strong>Kurduğun odalar</strong> (oda kodu, isteğe bağlı oda adı, soru listesi ve ülke); odada oynayan arkadaşların sonuçlarını görmeye devam etsin diye. Oda sahibi rastgele bir değerle değiştirilir. Odalar kurulduktan 48 saat sonra yeni oyunlara kapanır; oda kaydının kendisinin şu an otomatik bir silinme tarihi yoktur. Bir oda adında kişisel bir bilgi varsa bize yaz, kaldıralım.</li>
+  </ul>
+  <p>Firebase analiz verilerini en fazla 14 ay, çökme raporlarını en fazla 90 gün saklar.</p>
 
   <h2>6. Seçeneklerin ve hakların</h2>
   <ul>
-    <li>Verilerini oyunda sil: Ayarlar (ana ekrandaki dişli) → Verilerimi sil. Bu; oyuncunu, adını, sonuçlarını, oda oyunlarını, satın alma kaydını, bildirim anahtarını ve Google ya da Apple bağlantını sunucumuzdan siler (Apple bağlantısını Apple nezdinde de iptal eder) ve telefonundaki oyunu sıfırlar. Soru bildirimlerin anonimleştirilir. Plus aboneliği bununla iptal olmaz: Google Play'den ya da Apple Kimliği ayarlarından iptal etmelisin.</li>
+    <li>Verilerini oyunda sil: Ayarlar (ana ekrandaki dişli) → Verilerimi sil. Bu; oyuncunu, adını, sonuçlarını, oda oyunlarını, davet bilgilerini, bildirim anahtarını ve Google ya da Apple bağlantını sunucumuzdan siler (Apple bağlantısını Apple nezdinde de iptal eder) ve telefonundaki oyunu sıfırlar. Soru bildirimlerin, satın alma kayıtların ve kurduğun odalar seninle bağlantısı kesilerek saklanır (bkz. 5. bölüm). Plus aboneliği bununla iptal olmaz: Google Play'den ya da Apple Kimliği ayarlarından iptal etmelisin.</li>
     <li>Görünen adını, avatarını ya da ülkeni değiştir: Ayarlar.</li>
     <li>Hatırlatmaları ve bildirimleri kapat: Ayarlar → Günlük hatırlatma ya da telefonunun bildirim ayarları.</li>
     <li>Verilerinin bir kopyasını, düzeltilmesini ya da silinmesini e-postayla iste: <a href="/wiserio/delete-data/#tr">Verilerini sil</a> sayfasına bak ya da <a href="mailto:golunexgames@gmail.com">golunexgames@gmail.com</a> adresine yaz.</li>
   </ul>
   <p>Yaşadığın yere bağlı olarak (örneğin Türkiye'de KVKK ya da AB'de GDPR kapsamında) işlemeye itiraz etme, işlemeyi kısıtlatma ve veri koruma otoritesine şikâyette bulunma hakların da olabilir.</p>
+  <p><strong>ABD'de yaşıyorsan (örneğin Kaliforniya'da CCPA kapsamında):</strong> kişisel bilgilerini satmayız. Google AdMob'un kişiselleştirilmiş reklam göstermesi, CCPA kapsamında kişisel bilgilerin bağlamlar arası davranışsal reklamcılık için "paylaşılması" (sharing) sayılabilir. Bunu istediğin zaman kapatabilirsin: iPhone'da izlemeye izin verme (Ayarlar → Gizlilik ve Güvenlik → İzleme); Android'de reklam kimliğini telefonunun ayarlarından sil (telefona göre Ayarlar → Gizlilik → Reklamlar ya da Ayarlar → Google → Reklamlar). Gösterildiği yerlerde oyundaki Ayarlar → Reklam gizliliği seçenekleri'ni de kullanabilirsin. Kişisel bilgilerini öğrenme, düzeltme ve silme hakların da vardır; bu hakları kullandığın için sana farklı davranmayız.</p>
 
   <h2>7. Çocuklar</h2>
   <p>Wiserio genel kitleye yönelik bir bilgi yarışması oyunudur ve 13 yaşından küçük çocuklara yönelik değildir. Çocuklardan bilerek kişisel veri toplamayız. Bir çocuğun bize kişisel veri gönderdiğini düşünüyorsan bize e-posta gönder, sileriz.</p>
@@ -182,7 +209,7 @@
   <p>Bu politikayı değiştirirsek yukarıdaki tarihi güncelleriz; önemli değişiklikleri oyunda da bildiririz.</p>
 
   <h2>10. İletişim</h2>
-  <p>Golunex Games · <a href="mailto:golunexgames@gmail.com">golunexgames@gmail.com</a></p>
+  <p>Veri sorumlusu: Murat Altınay (Golunex Games), Türkiye · <a href="mailto:golunexgames@gmail.com">golunexgames@gmail.com</a></p>
 </article>
 
 </div>
