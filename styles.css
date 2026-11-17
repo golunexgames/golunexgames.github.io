@@ -359,7 +359,8 @@ html[data-lang="en"] #tr, html[data-lang="tr"] #en, html[data-lang] .legal .divi
 .hero .phone { animation: drift-a 7s ease-in-out infinite; }
 .hero .phone.back, .art.duo .phone.ws { animation: drift-b 8s ease-in-out infinite; }
 .reveal-on .section-head, .reveal-on .feature, .reveal-on .tile, .reveal-on .step, .reveal-on .facts, .reveal-on .cta, .reveal-on .about .copy { opacity: 0; translate: 0 22px; transition: opacity .6s ease, translate .6s ease, transform .2s ease, box-shadow .2s ease; }
-.reveal-on .in { opacity: 1; translate: 0 0; }
+/* .about .copy needs its own line: its hiding rule has three classes, which would outrank a two-class reveal */
+.reveal-on .in, .reveal-on .about .copy.in { opacity: 1; translate: 0 0; }
 .reveal-on .tiles .tile:nth-child(2), .reveal-on .steps .step:nth-child(2) { transition-delay: .08s; }
 .reveal-on .tiles .tile:nth-child(3), .reveal-on .steps .step:nth-child(3) { transition-delay: .16s; }
 .reveal-on .tiles .tile:nth-child(4) { transition-delay: .24s; }
