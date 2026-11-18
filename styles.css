@@ -374,3 +374,17 @@ footer nav a:hover { border-bottom-color: var(--gold); }
 .sb-hero .eyebrow, .sb-hero h1 .ice { color: #9FD8FF; }
 .sb-hero .btn { background: linear-gradient(120deg, #4FB2FF, #8FE0FF); color: #0C2550; }
 .sb-hero .btn:hover { color: #0C2550; }
+
+/* home: the Snowbie card, crisp snow over a deep winter blue */
+.feature.snow { background: linear-gradient(120deg, #4FB2FF, #BFE6FF); box-shadow: 0 30px 80px rgba(79, 178, 255, .25); }
+.feature.snow .feature-in { background: linear-gradient(170deg, #123C7A 0%, #0E2D5E 60%, #0A2148 100%); }
+.feature.snow .sub { color: #9FD8FF; }
+.feature.snow p.desc { color: #D3E8FF; }
+.feature.snow .chip { background: rgba(159, 216, 255, .1); color: #E6F4FF; box-shadow: inset 0 0 0 1px rgba(159, 216, 255, .3); }
+.feature.snow .badge { color: #BFE6FF; background: rgba(79, 178, 255, .12); box-shadow: inset 0 0 0 1px rgba(79, 178, 255, .4); }
+.feature.snow .badge::before { background: #4FB2FF; box-shadow: 0 0 0 4px rgba(79, 178, 255, .2); }
+.feature.snow .btn { background: linear-gradient(120deg, #4FB2FF, #8FE0FF); color: #0C2550; box-shadow: 0 10px 26px rgba(79, 178, 255, .35); }
+.feature.snow .btn:hover { color: #0C2550; }
+.feature.snow .btn.ghost { background: rgba(255, 255, 255, .06); color: #E6F4FF; box-shadow: inset 0 0 0 1.5px rgba(159, 216, 255, .35); }
+.feature.snow .btn.ghost:hover { color: #fff; box-shadow: inset 0 0 0 1.5px rgba(159, 216, 255, .7); }
+.feature.snow .phone { background: linear-gradient(160deg, #1B4F94, #0A2148); box-shadow: 0 24px 50px rgba(5, 20, 50, .45), inset 0 0 0 1.5px rgba(191, 230, 255, .3); }
