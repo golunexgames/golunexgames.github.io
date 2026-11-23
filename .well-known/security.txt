@@ -1,0 +1,5 @@
+Contact: mailto:golunexgames@gmail.com
+Expires: 2027-11-23T00:00:00.000Z
+Preferred-Languages: en, tr
+Canonical: https://golunexgames.com/.well-known/security.txt
+Policy: https://golunexgames.com/#contact
