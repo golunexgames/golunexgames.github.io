@@ -47,12 +47,8 @@
   <p id="lead">Open Wiserio to join your friend's room and play the same questions.</p>
   <div class="code" id="code"></div>
   <a class="btn primary" id="open" href="#">Open in Wiserio</a>
-  <!-- LAUNCH DAY: while Wiserio is not public in the stores, the store buttons stay out and #soon is shown.
-       When it goes live, put the store buttons back right here, below "Open in Wiserio" (in place of "About Wiserio"), e.g.
-       <a class="btn ghost" id="play" href="https://play.google.com/store/apps/details?id=com.golunex.wiserio">Google Play</a>
-       (and an App Store button), turn #soon into an install hint (EN + TR text in the script), and set STORE in the script to the Play URL. -->
-  <a class="btn ghost" id="about" href="https://golunexgames.com/wiserio/">About Wiserio</a>
-  <div class="small" id="soon">Wiserio is coming soon to iPhone and Android. If you already have it, open the app and enter the code under Friend Room → Join.</div>
+  <a class="btn ghost" id="play" href="https://play.google.com/store/apps/details?id=com.golunex.wiserio">Get it on Google Play</a>
+  <div class="small" id="soon">New here? Get Wiserio on Google Play (coming soon to iPhone), then open it and enter the code under Friend Room → Join.</div>
   <div class="small" id="bad" hidden>This link has no room code.</div>
 </main>
 <script>
@@ -61,7 +57,7 @@
   var T = tr ? {
     title: "Davet edildin!", lead: "Arkadaşının odasına katılmak ve aynı soruları oynamak için Wiserio'yu aç.",
     open: "Wiserio'da aç", play: "Google Play'den indir", about: "Wiserio hakkında",
-    soon: "Wiserio çok yakında iPhone ve Android'de. Uygulama sende varsa aç ve kodu Arkadaş Odası → Kodla katıl bölümüne yaz.",
+    soon: "Wiserio sende yok mu? Google Play'den indir (iPhone'a çok yakında geliyor), sonra aç ve kodu Arkadaş Odası → Kodla katıl bölümüne yaz.",
     bad: "Bu bağlantıda oda kodu yok."
   } : null;
   if (T) {
@@ -75,9 +71,8 @@
   document.getElementById("code").textContent = code;
   var ua = navigator.userAgent || "";
   var android = /Android/i.test(ua), ios = /iPhone|iPad|iPod/i.test(ua);
-  // where Android goes when the app is not installed. LAUNCH DAY: switch to
-  // "https://play.google.com/store/apps/details?id=com.golunex.wiserio" once the Play listing is public.
-  var STORE = "https://golunexgames.com/wiserio/";
+  // where Android goes when the app is not installed
+  var STORE = "https://play.google.com/store/apps/details?id=com.golunex.wiserio";
   var url = android
     ? "intent://room/" + code + "#Intent;scheme=wiserio;package=com.golunex.wiserio;S.browser_fallback_url=" + encodeURIComponent(STORE) + ";end"
     : "wiserio://room/" + code;
