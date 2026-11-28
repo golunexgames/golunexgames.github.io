@@ -9,7 +9,7 @@ Website of Golunex Games, served by GitHub Pages from the `main` branch.
 - Screenshots: Twicetold `assets/shot-*.jpg`, Wiserio `assets/wshot-*.jpg` (720×1280, from the current builds)
 - `/wiserio/privacy/`, `/wiserio/terms/` and `/wiserio/delete-data/`: Wiserio's store URLs; `/wiserio/r/` opens a friend-room link in the app; old `/wisewhere/*` paths redirect
 - Icons and banner: `favicon.svg`, `favicon.ico`, `favicon-48/96/192.png`, `apple-touch-icon.png`, `assets/golunex-logo-512.png`, `assets/og.png` (1200×630) are rendered from `../golunex-brand/v2/site.html` by `render-site.sh` there; don't edit the PNGs by hand
-- `/hybrio/privacy/`, `/hybrio/terms/`: Hybrio's privacy and terms URLs in Google Play (no game page yet)
+- `/hybrio/` game page; `/hybrio/privacy/`, `/hybrio/terms/`: Hybrio's privacy and terms URLs in Google Play. Screenshots `assets/hb-*.jpg` (540x1200, from hybrio/store/raw/en)
 - `app-ads.txt` authorises our AdMob publisher id (pub-8910225224900746) to sell ads in our apps
 
 Plain HTML and one stylesheet; no build step. Preview locally with `python3 -m http.server`.
